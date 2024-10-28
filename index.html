@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vital - Your Personal Health Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Launch Page -->
+  <section id="launch-page">
+    <div class="background-image"></div>
+    <div class="centered-content">
+      <h1 class="vital-title">Vital</h1>
+      <p class="tagline">Your Personal Health Guide</p>
+      <button onclick="startJourney()" class="start-btn">Get Started</button>
+    </div>
+  </section>
+
+  <!-- Gender Selection Page -->
+  <section id="gender-page" style="display:none;">
+    <h2>What's Your Gender?</h2>
+    <div class="gender-options">
+      <div class="gender-option" onclick="selectGender('male')">
+        <img src="images/male.jpg" alt="Male" class="clickable-image">
+        <p>Male</p>
+      </div>
+      <div class="gender-option" onclick="selectGender('female')">
+        <img src="images/female.jpg" alt="Female" class="clickable-image">
+        <p>Female</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Body Type Page -->
+  <section id="bodytype-page" style="display:none;">
+    <h2>Select Your Body Type</h2>
+    <div class="bodytype-options" id="bodytype-options"></div>
+  </section>
+
+  <!-- Body Goals Page -->
+  <section id="goals-page" style="display:none;">
+    <h2>Select Your Fitness Goal</h2>
+    <div class="goal-options" id="goal-options"></div>
+  </section>
+
+  <!-- User Details Page -->
+  <section id="details-page" style="display:none;">
+    <h2>Enter Your Details</h2>
+    <form id="user-details-form" onsubmit="return calculateIntake(event)">
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required><br>
+      <label for="height">Height (cm):</label>
+      <input type="number" id="height" name="height" required><br>
+      <label for="weight">Weight (kg):</label>
+      <input type="number" id="weight" name="weight" required><br>
+      <button type="submit" class="start-btn">Submit</button>
+    </form>
+  </section>
+
+  <!-- Diet Plan Page -->
+  <section id="diet-plan-page" style="display:none;">
+    <h2>Your Recommended Diet Plan</h2>
+    <div id="diet-plan"></div>
+
+    <!-- Contact Us Section -->
+    <div class="contact-box">
+      <p>Thank you for using Vital!</p>
+      <p>Contact Us: <a href="mailto:rohailhassan458@gmail.com">rohailhassan458@gmail.com</a></p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

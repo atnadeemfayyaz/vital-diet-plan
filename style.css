@@ -1,0 +1,179 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.centered-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.vital-title {
+  font-size: 120px;
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.start-btn {
+  margin-top: 40px;
+  padding: 15px 40px;
+  background-color: turquoise;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  background-color: #00bcd4;
+}
+
+.gender-options, .bodytype-options, .goal-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px; /* Add space between images */
+  flex-wrap: wrap; /* Allow wrapping if there are too many items */
+}
+
+.gender-option, .goal-option, .bodytype-option {
+  text-align: center;
+}
+
+.clickable-image {
+  width: 300px;  /* Increased image width */
+  height: 300px; /* Increased image height */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.clickable-image:hover {
+  transform: scale(1.1);
+}
+
+.gender-option p, .goal-option p, .bodytype-option p {
+  font-size: 2em;  /* Increased font size for text below images */
+  margin-top: 10px;
+}
+
+#details-page form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#details-page form label, #details-page form input {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+#details-page form input {
+  padding: 10px;
+  font-size: 18px;
+  width: 200px;
+  text-align: center;
+}
+
+form button {
+  padding: 10px 30px;
+  background-color: turquoise;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #00bcd4;
+}
+
+/* Table Styles */
+table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  background-color: #333;
+  color: white;
+  margin-bottom: 20px; /* Space below the table */
+}
+
+th, td {
+  border: 1px solid #555;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #444;
+  font-weight: bold;
+}
+
+td {
+  font-size: 18px;
+}
+
+/* Add space between table and <em> tag */
+em {
+  display: block;  /* Ensure the <em> tag behaves as a block-level element */
+  margin-top: 10px;  /* Space above the <em> tag */
+  font-size: 3em;  /* Increase the font size for "Extra Point:" */
+}
+
+/* Increase the font size of the text below "Extra Point:" */
+em + p {
+  font-size: 2.5em;  /* Larger font size for the paragraph following <em> */
+  margin-bottom: 60px;  /* Add more space below "Extra Point" and above "Contact Us" */
+}
+
+/* Increase font size for diet plan headers and results */
+#diet-plan p, #diet-plan h3, #diet-plan em {
+  font-size: 5em;  /* Increase the font size 5 times */
+  margin-top: 10px;
+}
+
+/* Increase font size for specific headings */
+h2, #diet-plan h3, em {
+  font-size: 3em;  /* Increase font size for headings */
+}
+
+/* Increase font size for specific texts */
+#diet-plan p {
+  font-size: 2.5em;  /* Increase for calories, protein, and Extra Point text */
+}
+
+h2 {
+  font-size: 3.5em;  /* Increase the font size of section headers */
+}
+
+/* Styling the Contact Us box */
+.contact-box {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 1.5em;  /* Adjust the font size */
+  display: inline-block;
+  position: absolute;
+  bottom: 20px;  /* Position the box at the bottom of the page */
+  left: 50%;
+  transform: translateX(-50%);  /* Center the box horizontally */
+}
