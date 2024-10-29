@@ -166,14 +166,3 @@ h2 {
 }
 
 /* Styling the Contact Us box */
-.contact-box {
-  background-color: #444;
-  padding: 20px;
-  border-radius: 5px;
-  font-size: 1.5em;  /* Adjust the font size */
-  display: inline-block;
-  position: absolute;
-  bottom: 20px;  /* Position the box at the bottom of the page */
-  left: 50%;
-  transform: translateX(-50%);  /* Center the box horizontally */
-}
